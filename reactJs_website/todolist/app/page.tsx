@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Home() {
   const [task, setTask] = React.useState([]);
-  let taskWidget = [];
+  let taskWidget: JSX.Element[] = [];
   task.forEach((element, index) => {
     taskWidget.push(
       <ListTile id={index} title={element} deleteTask={setTask} />

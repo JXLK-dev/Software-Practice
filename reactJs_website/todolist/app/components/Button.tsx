@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 
-export const Button: React.FC = (props) => {
+export const Button: React.FC<{ updateTaskList: any }> = ({
+  updateTaskList,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [task, setTask] = useState("");
 
@@ -13,7 +15,7 @@ export const Button: React.FC = (props) => {
     // Add your logic here to handle the submitted task
     setIsOpen(false);
 
-    props.updateTaskList((prevstate) => [...prevstate, task]);
+    updateTaskList((prevstate: any) => [...prevstate, task]);
     setTask("");
   };
 

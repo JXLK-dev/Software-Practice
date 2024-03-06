@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-export const ListTile: React.FC<{ title: string; id: int }> = ({
-  title,
-  id,
-  deleteTask,
-}) => {
+export const ListTile: React.FC<{
+  title: string;
+  id: number;
+  deleteTask: any;
+}> = ({ title, id, deleteTask }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -13,7 +13,9 @@ export const ListTile: React.FC<{ title: string; id: int }> = ({
 
   const handleDeleteClick = () => {
     // Add your logic here for handling delete button click
-    deleteTask((prevState) => prevState.filter((_, index) => index !== id));
+    deleteTask((prevState: any) =>
+      prevState.filter((_: any, index: number) => index !== id)
+    );
   };
 
   return (
