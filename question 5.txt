@@ -1,0 +1,3 @@
+Since I’m using Next JS as the framework for the website I have been working on, I’ll have to use vercel as it supports Next Js and it is very well documented for a guideline that describes the steps to deploy a static website.
+The steps for hosting a website on vercel is to have a github account which is very efficient for updates as it will push it to the live server so that we don’t need to interfere with the configuration of the server as it will automatically update. 
+Before deploying the website to the server, you will need to make sure there is no error by running npm run build as it will seek any bugs or errors that may affect the deployment.
