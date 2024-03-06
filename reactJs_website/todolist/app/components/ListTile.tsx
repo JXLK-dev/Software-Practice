@@ -20,9 +20,8 @@ export const ListTile: React.FC<{
 
   return (
     <div
-      className={`flex items-center justify-between p-4 border-b w-full md:w-3/4 sm:w-10/12 lg:w-1/2 ${
-        isChecked ? "line-through" : ""
-      }`}
+      className={`flex items-center justify-between p-4 border-b w-full md:w-3/4 sm:w-10/12 lg:w-1/2
+      `}
     >
       <div className="flex items-center">
         <div>
@@ -31,7 +30,9 @@ export const ListTile: React.FC<{
             className="form-checkbox"
             onChange={handleCheckboxChange}
           />
-          <span className="ml-10">{title}</span>
+          <span className={`ml-10 ${isChecked ? "line-through" : ""}`}>
+            {title}
+          </span>
         </div>
       </div>
       <button
