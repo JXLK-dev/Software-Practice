@@ -1,0 +1,18 @@
+
+# Brief Description about both projects
+
+Here's a brief description of a to-do list application using Flutter for mobile development and Next.js with Tailwind CSS for website development:
+
+Mobile Development:
+
+The to-do list application will be developed using Flutter, a popular framework for building cross-platform mobile applications.
+The application will utilize the Provider package for efficient data management and widget state management.
+To persist the to-do list data, the application will use the Sqflite package, which provides a simple and efficient way to interact with SQLite databases in Flutter.
+Website Development:
+
+The to-do list will also have a simple website component that allows users to track their submitted data.
+The website will be developed using Next.js, a React framework for building server-side rendered and static websites.
+Tailwind CSS will be used as the CSS framework for styling the website, providing a utility-first approach to building responsive designs.
+React libraries will be used to handle state changes in the website, allowing for dynamic updates to the to-do list data.
+
+Website: [https://software-practice.vercel.app/](https://software-practice.vercel.app/)
